@@ -62,7 +62,11 @@ const user: User = {
 
 // Type Assertion
 let customer: any = 1;
-// two ways to do type assertions
+// Two ways to do type assertions
 let customerID = <number>customer;
 let anotherCustomerID = customer as number;
 
+// Functions
+function addNum(x:number, y:number): number {
+  return x + y;
+}
