@@ -20,3 +20,6 @@ people =  [
   [2, 'Dingo'],
   [3, 'Lingo'],
 ];
+
+// Unions
+let people_id: string | number = 42;
