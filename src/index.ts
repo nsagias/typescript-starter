@@ -24,17 +24,38 @@ people =  [
 // Unions
 let people_id: string | number = 42;
 
+// Enum values
 enum DirectionsValues {
   UP,
   DOWN,
   LEFT,
   RIGHT,
-}
+};
 
+// Enum Strings
 enum DirectionsStrings {
   UP = "UP",
   DOWN = "DOWN",
   LEFT = "LEFT",
   RIGHT = "RIGHT",
-}
+};
 
+// Objects
+
+// const user : {
+//   id: number,
+//   name: string;
+// } = {
+//   id: 1,
+//   name: "Dingo"
+// };
+
+type User = {
+  id: number,
+  name: string;
+} 
+
+const user: User = {
+  id: 1,
+  name: "Dingo"
+};
