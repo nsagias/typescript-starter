@@ -23,3 +23,18 @@ people =  [
 
 // Unions
 let people_id: string | number = 42;
+
+enum DirectionsValues {
+  UP,
+  DOWN,
+  LEFT,
+  RIGHT,
+}
+
+enum DirectionsStrings {
+  UP = "UP",
+  DOWN = "DOWN",
+  LEFT = "LEFT",
+  RIGHT = "RIGHT",
+}
+
