@@ -78,6 +78,7 @@ function log(message: string | number): void {
 
 
 // Interfaces
+// note: cannot use interface with primitives and unions
 interface UserInterface {
   id: number;
   name: string;
