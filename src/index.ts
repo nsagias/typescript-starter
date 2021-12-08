@@ -8,3 +8,6 @@ let x: any = "Set to either anything";
 let arrNumsOnly: number[] = [1,2,3,4,5];
 let arrStringsOnly: string[] = ['name', 'lastName', 'Hello'];
 let arrAny     : any [] = [1, true, "hello world"];
+
+// Tuple
+let person: [number, string, boolean] = [1, 'name', true];
