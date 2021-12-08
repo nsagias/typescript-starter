@@ -11,3 +11,12 @@ let arrAny     : any [] = [1, true, "hello world"];
 
 // Tuple
 let person: [number, string, boolean] = [1, 'name', true];
+
+// Tuple Array/ Nested Array with tuple
+let people: [number, string][];
+
+people =  [
+  [1, 'Bingo'],
+  [2, 'Dingo'],
+  [3, 'Lingo'],
+];
