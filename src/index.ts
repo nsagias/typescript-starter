@@ -53,7 +53,7 @@ enum DirectionsStrings {
 type User = {
   id: number,
   name: string;
-} 
+};
 
 const user: User = {
   id: 1,
@@ -69,12 +69,12 @@ let anotherCustomerID = customer as number;
 // Functions
 function addNum(x:number, y:number): number {
   return x + y;
-}
+};
 
 // Function that doesn't return anything Void
 function log(message: string | number): void {
   console.log(message);
-}
+};
 
 
 // Interfaces
@@ -83,10 +83,18 @@ interface UserInterface {
   readonly id: number;
   name: string;
   age?: number
-} 
+};
 
 const user1: UserInterface = {
   id: 1,
   name: "Dingo",
 };
 // user1.id = 5
+
+// Function interface
+// Generic two imput math interface
+interface MathFunc {
+  (x: number, y: number): number
+};
+
+const add: MathFunc = (x: number, y: number) : number => x + y;
