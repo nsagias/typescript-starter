@@ -70,3 +70,8 @@ let anotherCustomerID = customer as number;
 function addNum(x:number, y:number): number {
   return x + y;
 }
+
+// Function that doesn't return anything Void
+function log(message: string | number): void {
+  console.log(message);
+}
