@@ -187,5 +187,37 @@ const dingo4 = new Person4(1, "Dingo");
 const bingo4 = new Person4(2, "Bingo");
 
 
+interface PersonInterface2 {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+// PersonInterface example Classes Extend
+class Person5 implements PersonInterface2{
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+
+  register() {
+    return `${this.name} is now registered`;
+  }
+};
+
+class Player extends Person5 {
+  position: string;
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name)
+    this.position = position;
+  }
+}
+
+const dingo5 = new Person5(1, "Dingo");
+const bingo5 = new Person5(2, "Bingo");
 
 
