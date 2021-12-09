@@ -117,3 +117,20 @@ class Person {
 const dingo = new Person(1, "Dingo");
 const bingo = new Person(2, "Bingo");
 
+
+// Private Classes
+class Person2 {
+  private id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+};
+
+const dingo2 = new Person2(1, "Dingo");
+const bingo2 = new Person2(2, "Bingo");
+
+// dingo2.id = 5
+// console.log(dingo2.id)
