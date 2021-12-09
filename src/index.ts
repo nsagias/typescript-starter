@@ -144,6 +144,10 @@ class Person3 {
     this.id = id;
     this.name = name;
   }
+
+  register() {
+    return `${this.name} is now registered`;
+  }
 };
 
 const dingo3 = new Person3(1, "Dingo");
@@ -151,3 +155,4 @@ const bingo3 = new Person3(2, "Bingo");
 
 // dingo3.id = 5
 // console.log(dingo3.id)
+// console.log(dingo3.register());
