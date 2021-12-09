@@ -225,3 +225,14 @@ class Player extends Person5 {
 
 const player = new Player(1, "Player", "Position")
 
+
+// Generics
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1,2,3,4,5]);
+let strArray = getArray<string>(['a', 'b', 'c','d','e']);
+
+
+
