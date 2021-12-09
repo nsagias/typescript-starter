@@ -30,7 +30,7 @@ enum DirectionsValues {
   DOWN,
   LEFT,
   RIGHT,
-};
+}
 
 // Enum Strings
 enum DirectionsStrings {
@@ -38,7 +38,7 @@ enum DirectionsStrings {
   DOWN = "DOWN",
   LEFT = "LEFT",
   RIGHT = "RIGHT",
-};
+}
 
 // Objects
 
@@ -53,12 +53,12 @@ enum DirectionsStrings {
 type User = {
   id: number,
   name: string;
-};
+}
 
 const user: User = {
   id: 1,
   name: "Dingo"
-};
+}
 
 // Type Assertion
 let customer: any = 1;
@@ -69,12 +69,12 @@ let anotherCustomerID = customer as number;
 // Functions
 function addNum(x:number, y:number): number {
   return x + y;
-};
+}
 
 // Function that doesn't return anything Void
 function log(message: string | number): void {
   console.log(message);
-};
+}
 
 
 // Interfaces
@@ -83,19 +83,19 @@ interface UserInterface {
   readonly id: number;
   name: string;
   age?: number
-};
+}
 
 const user1: UserInterface = {
   id: 1,
   name: "Dingo",
-};
+}
 // user1.id = 5
 
 // Function interface
 // Generic two imput math interface
 interface MathFunc {
   (x: number, y: number): number
-};
+}
 
 const add:      MathFunc = (x: number, y: number) : number => x + y;
 const subtract: MathFunc = (x: number, y: number) : number => x - y;
@@ -112,7 +112,7 @@ class Person {
     this.id = id;
     this.name = name;
   }
-};
+}
 
 const dingo = new Person(1, "Dingo");
 const bingo = new Person(2, "Bingo");
@@ -127,7 +127,7 @@ class Person2 {
     this.id = id;
     this.name = name;
   }
-};
+}
 
 const dingo2 = new Person2(1, "Dingo");
 const bingo2 = new Person2(2, "Bingo");
@@ -150,7 +150,7 @@ class Person3 {
   register() {
     return `${this.name} is now registered`;
   }
-};
+}
 
 const dingo3 = new Person3(1, "Dingo");
 const bingo3 = new Person3(2, "Bingo");
@@ -181,7 +181,7 @@ class Person4 implements PersonInterface{
   register() {
     return `${this.name} is now registered`;
   }
-};
+}
 
 const dingo4 = new Person4(1, "Dingo");
 const bingo4 = new Person4(2, "Bingo");
@@ -206,7 +206,7 @@ class Person5 implements PersonInterface2{
   register() {
     return `${this.name} is now registered`;
   }
-};
+}
 
 const dingo5 = new Person5(1, "Dingo");
 const bingo5 = new Person5(2, "Bingo");
