@@ -159,6 +159,8 @@ const bingo3 = new Person3(2, "Bingo");
 // console.log(dingo3.id)
 // console.log(dingo3.register());
 
+
+
 interface PersonInterface {
   id: number;
   name: string;
