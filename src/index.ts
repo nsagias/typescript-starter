@@ -208,6 +208,9 @@ class Person5 implements PersonInterface2{
   }
 };
 
+const dingo5 = new Person5(1, "Dingo");
+const bingo5 = new Person5(2, "Bingo");
+
 class Player extends Person5 {
   position: string;
 
@@ -217,7 +220,6 @@ class Player extends Person5 {
   }
 }
 
-const dingo5 = new Person5(1, "Dingo");
-const bingo5 = new Person5(2, "Bingo");
 
+const player = new Player(1, "Player", "Position")
 
