@@ -211,6 +211,8 @@ class Person5 implements PersonInterface2{
 const dingo5 = new Person5(1, "Dingo");
 const bingo5 = new Person5(2, "Bingo");
 
+
+// Subclass
 class Player extends Person5 {
   position: string;
 
