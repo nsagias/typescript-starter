@@ -134,3 +134,20 @@ const bingo2 = new Person2(2, "Bingo");
 
 // dingo2.id = 5
 // console.log(dingo2.id)
+
+// Protected Classes
+class Person3 {
+  protected id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+};
+
+const dingo3 = new Person3(1, "Dingo");
+const bingo3 = new Person3(2, "Bingo");
+
+// dingo3.id = 5
+// console.log(dingo3.id)
