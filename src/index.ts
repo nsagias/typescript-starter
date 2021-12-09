@@ -184,7 +184,6 @@ class Person4 implements PersonInterface{
 const dingo4 = new Person4(1, "Dingo");
 const bingo4 = new Person4(2, "Bingo");
 
-// dingo3.id = 5
-// console.log(dingo3.id)
-// console.log(dingo3.register());
+
+
 
