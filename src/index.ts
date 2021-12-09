@@ -135,6 +135,8 @@ const bingo2 = new Person2(2, "Bingo");
 // dingo2.id = 5
 // console.log(dingo2.id)
 
+
+
 // Protected Classes
 class Person3 {
   protected id: number;
@@ -156,3 +158,33 @@ const bingo3 = new Person3(2, "Bingo");
 // dingo3.id = 5
 // console.log(dingo3.id)
 // console.log(dingo3.register());
+
+interface PersonInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+// PersonInterface example Classes
+// note private and protect cause interface error
+class Person4 implements PersonInterface{
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+
+  register() {
+    return `${this.name} is now registered`;
+  }
+};
+
+const dingo4 = new Person4(1, "Dingo");
+const bingo4 = new Person4(2, "Bingo");
+
+// dingo3.id = 5
+// console.log(dingo3.id)
+// console.log(dingo3.register());
+
